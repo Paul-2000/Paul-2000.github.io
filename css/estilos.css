@@ -1,0 +1,364 @@
+/**Globales**/
+
+.Contenedor {
+    max-width: 125rem;
+    /** =1200px **/
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+    color: darkred;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/**Fin Globales**/
+
+
+/**Barra**/
+
+.Barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-center;
+    padding-top: 3rem;
+}
+
+
+/**Fin Barra**/
+
+
+/**Utilidades**/
+
+.Seccion {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.Fw-300 {
+    font-weight: 600;
+}
+
+.Centrar-texto {
+    text-align: center;
+}
+
+.D-block {
+    display: block!important;
+}
+
+.Contenido-centrado {
+    max-width: 800px;
+}
+
+
+/**Fin Utilidades**/
+
+
+/**HTML**/
+
+html {
+    font-size: 62.5%;
+    /**Reset para Rems - 62.5% = 10px de 16px[Default]**/
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/**Fin HTML**/
+
+
+/**Navegación**/
+
+.Navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.Navegacion a:last-of-type {
+    margin: 0;
+}
+
+.Navegacion a:hover {
+    color: rgb(2, 226, 255);
+}
+
+
+/**Fin Navegación**/
+
+
+/**Header**/
+
+.Site-header {
+    background-color: #333333;
+    padding: 1rem 0 2rem 0;
+}
+
+.Site-header.Inicio {
+    background-image: url(../img/IMG_20190121.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+
+/**Fin Header**/
+
+
+/**Body**/
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/**Fin Body**/
+
+
+/**Contenido-Header**/
+
+.Contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Contenido-header h1 {
+    color: rgb(5, 5, 5);
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+
+/**Fin Contenido-Header**/
+
+
+/** Foto **/
+
+.Foto {
+    flex-basis: calc(100% - 5rem);
+    text-align: center;
+    margin: 4rem;
+}
+
+
+/** Fin Foto **/
+
+
+/**Iconos Datos**/
+
+.Iconos-datos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Icono-3 {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: left;
+    margin: 3rem auto auto 12rem;
+}
+
+.Icono-2 {
+    flex-basis: calc(50% - 1rem);
+    text-align: left;
+    margin: 3rem auto auto 12rem;
+}
+
+
+/**
+.Icono p {
+    margin-left: 2rem;
+    text-align: left;
+}**/
+
+.Icono h3 {
+    text-transform: uppercase;
+}
+
+
+/**Fin Iconos Datos**/
+
+
+/**Footer**/
+
+.Site-footer {
+    background-color: #333333;
+    margin-bottom: 0;
+}
+
+.Contenedor-footer {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Copyrigh {
+    margin: 0;
+    color: #ffffff;
+}
+
+
+/**Fin Footer**/
+
+
+/** Despedida **/
+
+.Despedida {
+    color: green;
+    flex-basis: calc(100% - 5rem);
+    text-align: center;
+    margin: 4rem;
+}
+
+
+/** Fin Despedida **/
+
+
+/** Contacto **/
+
+.Contacto p {
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+
+legend {
+    font-size: 2.4rem;
+    color: #333333;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    height: 20rem;
+}
+
+.Forma-contacto {
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/** Fin Contacto **/
+
+
+/*** Nosotros ***/
+
+.Barra-nosotros {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+.Contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2.5rem;
+}
+
+.Texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+
+/*** Fin Nosotros ***/
+
+
+/** Espacio entre formularios **/
+
+.Espacio {
+    margin: 1.5rem;
+}
+
+
+/** Fin Espacio entre formularios **/
+
+
+/**Botones**/
+
+.Boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+.Boton:hover {
+    cursor: pointer;
+}
+
+.Boton-amarillo {
+    background-color: #e08709;
+}
+
+.Boton-verde {
+    background-color: #71b100;
+}
+
+
+/**Fin Botones**/
